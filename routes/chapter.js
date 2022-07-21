@@ -39,7 +39,7 @@ router.get("/", function(req, res, next) {
   var id = null;
   var totalpages = null;
   getPageContent(URL + idnovels+'/'+idchapter).then($ => {
-    chaptername = $('.name_chapter h1').text();
+    chaptername = $('.name_chapter').text();
     content = $('.vung_doc').html();
     novel = {
         idnovels: idnovels,
