@@ -47,7 +47,7 @@ router.get("/", function(req, res, next) {
         .each(function() {
           novelsname = $(this).text();
          var novelid = $(this).attr('href');
-         idnovel = novelid.slice(novelid.search("com/") + 5);
+         idnovel = novelid.slice(novelid.search("com/") + 4);
         //   console.log(idnovel);
         });
       $(this)
