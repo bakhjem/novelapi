@@ -65,8 +65,8 @@ router.get("/", function(req, res, next) {
         chapterid.search(idnovels + "/") + (idnovels.length + 1)
       );
       chapterlist.unshift({
-        chaptername: chaptername,
-        idchapter: idchapter
+        label: chaptername,
+        value: idchapter
       })
     });
     novel.push({
